@@ -27,12 +27,12 @@ public class reto2 {
 
         // Imprimimos las alertas del vector de nodulos
         for (int i = 0; i < numberOfPatients; i++) {
-            System.out.println(noduleArr[i].getAlert());
+            System.out.println(noduleArr[i].computeAlert());
         }
 
         // Imprimimos los tratamientos del vector de nodulos
         for (int i = 0; i < numberOfPatients; i++) {
-            System.out.println(noduleArr[i].getTreatment()); // Aqui debe llamar el metodo 'computeTreatment'
+            System.out.println(noduleArr[i].computeTreatment()); // Aqui debe llamar el metodo 'computeTreatment'
         }
     }
 }
