@@ -26,30 +26,30 @@ public class Nodule {
     }
 
     public String getAlert() {
-        return this.; // Aqui debe retornar el atributo alert
+        return this.alert; // Aqui debe retornar el atributo alert
     }
 
     public String getTreatment() {
-        return this.; // Aqui debe retornar el atributo treatment
+        return this.treatment; // Aqui debe retornar el atributo treatment
     }
 
     private int computeComposition() {
         int score = 0;
         if (this.composition.equals("C3")) {
-            score += ; // Aqui debe sumar 1
+            score +=1 ; // Aqui debe sumar 1
         }else if (this.composition.equals("C4")) {
-            ; // Aqui debe sumar 2 a la variable de score
+           score +=2 ; // Aqui debe sumar 2 a la variable de score
         }
-        return ; // Aqui debe retonar el score
+        return score ; // Aqui debe retonar el score
     }
 
     private int computeEchogenicity() {
         int score = 0;
         if (this.echogenicity.equals("E2")) {
             score += 1;
-        }else if (this.echogenicity.equals()) { // Aqui debe verificar que sea igual a E3
+        }else if (this.echogenicity.equals("E3")) { // Aqui debe verificar que sea igual a E3
             score += 2;
-        }else if (this.) {// Aqui debe verificar que sea igual a E4
+        }else if (this.echogenicity.equals("E4")) {// Aqui debe verificar que sea igual a E4
             score += 3;
         }
         return score;
@@ -97,9 +97,9 @@ public class Nodule {
         } else if ((this.score >= 4) && (this.score <= 6)) {
             res = "moderadamente sospechoso";
         } else if (this.score >= 7) {
-             // Aqui debe asignar a la variable 'res' con el valor 'altamente sospechoso'
+            res = "altamente sospechoso";  // Aqui debe asignar a la variable 'res' con el valor 'altamente sospechoso'
         }
-        return ; // Aqui debe retornar res
+        return res; // Aqui debe retornar res
     }
 
     public String computeTreatment() {

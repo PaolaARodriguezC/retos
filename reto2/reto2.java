@@ -11,7 +11,7 @@ public class reto2 {
         Nodule[] noduleArr = new Nodule[numberOfPatients];
         for (int i = 0; i < numberOfPatients; i++) {
             // Leemos las caracteristicas del nodo
-            String[] noduleAttributes = scanner.nextLine().split(); // Aqui debe hacer un split por espacio
+            String[] noduleAttributes = scanner.nextLine().split(" "); // Aqui debe hacer un split por espacio
             // Vector temporal para almacenar los focos ecogenicos
             String[] tempEchgenicFoci = new String[4];
             // Almacenamos los focos ecogenicos en el vector temporal
@@ -27,12 +27,12 @@ public class reto2 {
 
         // Imprimimos las alertas del vector de nodulos
         for (int i = 0; i < numberOfPatients; i++) {
-            System.out.println(noduleArr[i].computeAlert());
+            System.out.println(noduleArr[i].getAlert());
         }
 
         // Imprimimos los tratamientos del vector de nodulos
         for (int i = 0; i < numberOfPatients; i++) {
-            System.out.println(noduleArr[i].()); // Aqui debe llamar el metodo 'computeTreatment'
+            System.out.println(noduleArr[i].getTreatment()); // Aqui debe llamar el metodo 'computeTreatment'
         }
     }
 }
